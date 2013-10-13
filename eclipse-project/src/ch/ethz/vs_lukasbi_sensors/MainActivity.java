@@ -54,9 +54,7 @@ public class MainActivity extends Activity {
     }
     
     private void showDetails(Sensor s) {
-    	Intent intent = new Intent(this, SensorActivity.class); 
-    	Log.d(MAIN_TAG, "Selected sensor "+s.getName());
-    	
+    	Intent intent = new Intent(this, SensorActivity.class);
     	intent.putExtra("sensor", s.hashCode());
     	this.startActivity(intent);
     }
